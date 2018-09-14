@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>数学を数楽にしMATH</title>
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.app.css">
+    </head>
+    <body onload="init()">
+        <div class="header">
+            <span class="fixCent">数学を数楽にしMATH</span>
+            <button id="returnToMenu" class="btn">メニューに戻る</button>
+        </div>
+        <div id="proport">
+            <div class="appWrapper">
+                <div class="applix">
+                    <button class="appIcon" onclick="openGame('https://prazma.github.io/3d2048')" ><img class="iconArt" src="img/3d2048.png"></button>
+                    <div class="textAlign">
+                        <span>3D 2048</span>
+                    </div>
+                </div>
+                <div class="applix">
+                    <button class="appIcon" onclick="openGame('https://phosphorus.github.io/app.html?id=246326540&turbo=false&full-screen=true')"><img class="iconArt" src="img/3dXO.png"></button>
+                    <div class="textAlign">
+                        <span>3Dまるばつゲーム</span>
+                    </div>
+                </div><br>
+                <div class="applix">
+                    <button class="appIcon" onclick="openGame('https://phosphorus.github.io/app.html?id=246341569&turbo=false&full-screen=true')"><img class="iconArt" src="img/squareCut.png"></button>
+                    <div class="textAlign">
+                        <span>切り取りゲーム</span>
+                    </div>
+                </div>
+                <div class="applix">
+                    <button class="appIcon" onclick="openGame('https://prazma.github.io/soinsu')"><img class="iconArt" src="img/divideIcon.png"></button>
+                    <div class="textAlign">
+                        <span>割り算ゲーム</span>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+        <div id="gameWrapper">
+            <iframe id="gameFrame" src=""></iframe>
+        </div>
+        <script src="js/main.ui.js"></script>
+    </body>
+</html>
